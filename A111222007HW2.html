@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-Tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳宥蒝履歷表</title>
+    <style>
+        header, footer, nav { text-align: center; padding: 10px; margin: 10px;}
+        nav { background-color: #f0bc6d; font-size: 14px;}
+        article { background-color: #eec88f; padding: 10px; margin: 10px;}
+        aside { width: 30%; padding-left: 10px; margin-left: 10px; float: right;}
+        footer { background-color: #ffffff; font-size: 12pt; }
+        table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+              }
+        td, th {
+                border: 1px solid #949292;
+                text-align: center;
+                padding: 8px;
+               }
+        .image-cell {
+            width: 110px;
+            height: 200px;
+            position: relative;
+        }
+        .image-cell img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .color-border {
+            background-color: rgb(236, 231, 161); /* Change the border color to red */
+        }
+    </style>  
+</head>
+<body>
+    <header> 
+        <img src="https://picsum.photos/820/100"> <!--圖片會隨機更新-->
+    </header>
+    <main>
+        <article>
+            <table>
+                <caption>陳宥蒝履歷表</caption>
+                <tr>
+                    <th class="color-border">姓名</th>
+                    <th>陳宥蒝</th> 
+                    <th class="color-border">性別</th>
+                    <th>男</th> 
+                    <td rowspan="5" class="image-cell"><img src="https://i.pinimg.com/originals/37/f9/ff/37f9ff89ef0060122e2f5aff14eeeb40.png"></td>
+                </tr>
+                <tr>
+                    <td class="color-border">年齡</td>
+                    <td>19</td>
+                    <td class="color-border">電話</td> 
+                    <td>0970456987</td> 
+                </tr>
+                <tr>
+                    <td class="color-border">地址</td>
+                    <td colspan="3">台北市文山區木柵路一段1巷1號</td>
+                </tr>
+                <tr>
+                    <td class="color-border">學歷</td>
+                    <td colspan="3">世新大學 資訊管理學系</td>
+                </tr>
+                <tr>
+                    <td class="color-border">專長</td>
+                    <td colspan="3">紀錄美好生活</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <footer>Copyright © momoco</footer>
+</body>
+</html>

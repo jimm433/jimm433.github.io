@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-Tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影片觀後感問卷調查</title>
+    <style>
+        header, nav, footer { background-color: #d0eafe; text-align: center; padding: 8px; }
+        article {padding: 8px; margin: 10px;}
+        .feedback-form { margin-top: 20px; }
+        .question {
+        display: flex;
+        justify-content: flex-start; /* Updated this line */
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .options {
+        display: flex;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>影片觀後感問卷調查</h1>
+    </header>
+    <main>
+        <article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bNbYZ2aLiC8?si=iiotqwHEePKkTbYb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            </article>
+        <form class="feedback-form">
+            <fieldset>
+                <legend>意見調查</legend>
+
+                <div class="question">
+                    <label>看完影片後，對於背景的設計，你覺得?</label>
+                    <div class="options">
+                        <input type="radio" name="background" value="讚">讚
+                        <input type="radio" name="background" value="還不錯">還不錯
+                        <input type="radio" name="background" value="還可以">還可以
+                        <input type="radio" name="background" value="soso">soso
+                        <input type="radio" name="background" value="爛透了">爛透了
+                    </div>
+                </div><div class="question">
+                    <label>看完影片後，對於人物的服裝，你覺得?</label>
+                    <div class="options">
+                        <input type="radio" name="costume" value="讚">讚
+                        <input type="radio" name="costume" value="還不錯">還不錯
+                        <input type="radio" name="costume" value="還可以">還可以
+                        <input type="radio" name="costume" value="soso">soso
+                        <input type="radio" name="costume" value="爛透了">爛透了
+                    </div>
+                </div><div class="question">
+                    <label>看完影片後，對於音樂的選材，你覺得?</label>
+                    <div class="options">
+                        <input type="radio" name="music" value="讚">讚
+                        <input type="radio" name="music" value="還不錯">還不錯
+                        <input type="radio" name="music" value="還可以">還可以
+                        <input type="radio" name="music" value="soso">soso
+                        <input type="radio" name="music" value="爛透了">爛透了
+                    </div>
+                </div><div class="question">
+                    <label>看完影片後，對於劇情的安排，你覺得?</label>   
+                     <div class="options">
+                        <input type="radio" name="plot" value="讚">讚
+                        <input type="radio" name="plot" value="還不錯">還不錯
+                        <input type="radio" name="plot" value="還可以">還可以
+                        <input type="radio" name="plot" value="soso">soso
+                        <input type="radio" name="plot" value="爛透了">爛透了
+                    </div>
+                </div><div class="question">
+                    <label>看完影片後，對於影片的流暢度，你覺得?</label>
+                    <div class="options">
+                        <input type="radio" name="video" value="讚">讚
+                        <input type="radio" name="video" value="還不錯">還不錯
+                        <input type="radio" name="video" value="還可以">還可以
+                        <input type="radio" name="video" value="soso">soso
+                        <input type="radio" name="video" value="爛透了">爛透了
+                    </div>
+                </div>
+                
+            </fieldset>
+            <p>
+               感想
+            </p>
+                <textarea id="question" name="question" rows="4" cols="80" placeholder="請在這裡輸入你的感想"></textarea>
+            <p></p>
+            
+            <input type="submit" value="提交">
+            <input type="reset" value="取消">
+
+        </form>
+    </main>
+    <footer>Copyright © momoco</footer>
+</body>
+</html>
